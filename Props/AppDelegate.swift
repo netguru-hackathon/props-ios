@@ -6,9 +6,9 @@
 
 import UIKit
 
-@UIApplicationMain internal class AppDelegate: UIResponder, UIApplicationDelegate {
+@UIApplicationMain public class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /// The application's main window.
-    @IBOutlet internal var window: UIWindow!
+    @IBOutlet public var window: UIWindow!
 
 }
