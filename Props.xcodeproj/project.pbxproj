@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A081B6A1A2BA2BD00EEA145 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A081B691A2BA2BD00EEA145 /* Root.storyboard */; };
+		3A081B6C1A2BA80800EEA145 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A081B6B1A2BA80800EEA145 /* SplashViewController.swift */; };
 		3A98473A1A2B9F4F0057C386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9847391A2B9F4F0057C386 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +23,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A081B691A2BA2BD00EEA145 /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		3A081B6B1A2BA80800EEA145 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		3A9847391A2B9F4F0057C386 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A98473C1A2B9F890057C386 /* Props-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Props-Info.plist"; sourceTree = "<group>"; };
 		3A98473D1A2B9F890057C386 /* Props-Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Props-Tests-Info.plist"; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 		3A98473F1A2BA1350057C386 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3A081B691A2BA2BD00EEA145 /* Root.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 		3A9847411A2BA1590057C386 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3A081B6B1A2BA80800EEA145 /* SplashViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A081B6A1A2BA2BD00EEA145 /* Root.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A98473A1A2B9F4F0057C386 /* AppDelegate.swift in Sources */,
+				3A081B6C1A2BA80800EEA145 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

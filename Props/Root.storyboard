@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yMJ-km-oTP">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="RXs-Bx-ue0">
+            <objects>
+                <viewController id="yMJ-km-oTP" customClass="SplashViewController" customModule="Props" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JAo-hD-Tk9"/>
+                        <viewControllerLayoutGuide type="bottom" id="bDC-3D-92s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GG1-5y-P12">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Props" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkv-QR-fNz">
+                                <rect key="frame" x="251" y="278" width="98" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.24313725490196078" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mr-Ae-iyD">
+                                <rect key="frame" x="222" y="433" width="157" height="34"/>
+                                <state key="normal" title="Sign in with Google">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 0.0.0 (0)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSd-jV-r3E">
+                                <rect key="frame" x="248" y="541" width="104" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© Netguru Sp. z o.o." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8H-pD-qPb">
+                                <rect key="frame" x="234" y="563" width="133" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.70588235294117652" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="7mr-Ae-iyD" secondAttribute="centerX" id="4Gb-yi-vx3"/>
+                            <constraint firstItem="l8H-pD-qPb" firstAttribute="bottom" secondItem="bDC-3D-92s" secondAttribute="top" constant="-20" id="CDv-Xa-LYJ"/>
+                            <constraint firstAttribute="centerX" secondItem="l8H-pD-qPb" secondAttribute="centerX" id="HCv-IU-Z58"/>
+                            <constraint firstItem="7mr-Ae-iyD" firstAttribute="centerY" secondItem="GG1-5y-P12" secondAttribute="centerY" multiplier="1.5" priority="750" id="IR0-uX-cYR"/>
+                            <constraint firstItem="7mr-Ae-iyD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gkv-QR-fNz" secondAttribute="bottom" id="K5f-gn-rf3">
+                                <variation key="heightClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="gkv-QR-fNz" secondAttribute="centerX" id="T7Y-he-Ogj"/>
+                            <constraint firstItem="gSd-jV-r3E" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7mr-Ae-iyD" secondAttribute="bottom" id="ebE-Mw-Cag">
+                                <variation key="heightClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="gSd-jV-r3E" secondAttribute="centerX" id="sw7-MP-WOT"/>
+                            <constraint firstAttribute="centerY" secondItem="gkv-QR-fNz" secondAttribute="centerY" id="tS5-px-uHW"/>
+                            <constraint firstItem="l8H-pD-qPb" firstAttribute="top" secondItem="gSd-jV-r3E" secondAttribute="bottom" constant="5" id="u3w-1R-U8v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appVersionLabel" destination="gSd-jV-r3E" id="mwP-to-iE9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c36-qx-8xk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-392" y="-75"/>
+        </scene>
+    </scenes>
+</document>
