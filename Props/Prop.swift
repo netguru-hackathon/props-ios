@@ -6,7 +6,7 @@
 
 import UIKit
 
-public struct Prop {
+struct Prop: Equatable {
 
     let identifier: Int
     let body: String
@@ -26,4 +26,8 @@ public struct Prop {
         self.receiver = User(dictionary: dictionary["user"] as [String: AnyObject]!)
     }
 
+}
+
+func == (lhs: Prop, rhs: Prop) -> Bool {
+    return lhs.identifier == rhs.identifier
 }

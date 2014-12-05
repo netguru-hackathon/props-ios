@@ -6,7 +6,7 @@
 
 import UIKit
 
-public struct User {
+struct User: Equatable {
 
     let identifier: Int
     let displayName: String
@@ -18,4 +18,8 @@ public struct User {
         self.avatarURL = NSURL(string: (dictionary["avatar_url"] as String!)) as NSURL!
     }
 
+}
+
+func == (lhs: User, rhs: User) -> Bool {
+    return lhs.identifier == rhs.identifier
 }
