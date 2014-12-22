@@ -1,0 +1,6 @@
+[submodule "Dependencies/Alamofire"]
+	path = Dependencies/Alamofire
+	url = https://github.com/Alamofire/Alamofire
+[submodule "Dependencies/GooglePlus"]
+	path = Dependencies/GooglePlus
+	url = https://github.com/adamotte/googleplus-ios-sdk
